@@ -1,0 +1,13 @@
+ "FEATURE": [
+      {
+        "S.No.": "1",
+        "USERNAME": "DEFAULT",
+        "CREATE": "TRUE",
+        "CANCEL": "TRUE",
+        "PRINT": "TRUE",
+        "DELETE": "TRUE",
+        "GenImm": "FALSE",
+        "Sale": "TRUE",
+        "Finance": ""
+      }
+    ],

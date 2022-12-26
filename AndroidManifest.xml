@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.trial.warehouse">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="31"
+        tools:ignore="GradleOverrides" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Warehouse"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".materialgroup.MgDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".materialgroup.MgDispText"
+            android:exported="false" />
+        <activity
+            android:name=".unitofmeasure.UomDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".vendor.VenDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".materialmaster.MmDispText"
+            android:exported="false" />
+        <activity
+            android:name=".materialmaster.MmDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".customer.CusDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".storagetype.StDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".location.LcDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".warehouse.WhDispShow"
+            android:exported="false" />
+        <activity
+            android:name=".MasterData"
+            android:exported="false" />
+        <activity
+            android:name=".del.DLDisplayShow"
+            android:exported="false" />
+        <activity
+            android:name=".del.DLDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".wmstock.wmstock"
+            android:exported="false" />
+        <activity
+            android:name=".delivery"
+            android:exported="false" />
+        <activity
+            android:name=".del.createdel"
+            android:exported="false" />
+        <activity
+            android:name=".updategr"
+            android:exported="false" />
+        <activity
+            android:name=".gr.creategr"
+            android:exported="false" />
+        <activity
+            android:name=".goodsrec"
+            android:exported="false" />
+        <activity
+            android:name=".gr.dispgr2"
+            android:exported="false"
+            android:label="Goods Receipt" />
+        <activity
+            android:name=".gr.dispgr"
+            android:exported="false"
+            android:label="Goods Receipt" />
+        <activity
+            android:name=".Pdashboard"
+            android:exported="false"
+            android:label="Dashboard" />
+        <activity
+            android:name=".Tdashboard"
+            android:exported="false"
+            android:label="Dashboard" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:label="Login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
